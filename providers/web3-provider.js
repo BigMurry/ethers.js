@@ -60,7 +60,7 @@ var Web3Provider = /** @class */ (function (_super) {
             var request = {
                 method: method,
                 params: params,
-                id: 42,
+                // id: 42,
                 jsonrpc: "2.0"
             };
             _this._sendAsync(request, function (error, result) {

@@ -68,7 +68,7 @@ export class Web3Provider extends JsonRpcProvider {
             var request = {
                 method: method,
                 params: params,
-                id: 42,
+                // id: 42,
                 jsonrpc: "2.0"
             };
 

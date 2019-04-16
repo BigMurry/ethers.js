@@ -1,5 +1,5 @@
 {
-  "name": "ethers",
+  "name": "f-ethers",
   "version": "4.0.27",
   "description": "Ethereum wallet library.",
   "main": "./index.js",
