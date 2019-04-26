@@ -1,6 +1,6 @@
 {
   "name": "f-ethers",
-  "version": "4.0.27",
+  "version": "4.0.27.1",
   "description": "Ethereum wallet library.",
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -16,7 +16,7 @@
     "test": "if [ \"$RUN_PHANTOMJS\" = \"1\" ]; then npm run-script test-phantomjs; else npm run-script test-node; fi",
     "test-node": "npm run dist-test && mocha --no-colors --reporter tests/reporter tests/test-*.js",
     "test-phantomjs": "npm run dist-test && gulp tests && phantomjs --web-security=false ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js ./tests/test.html ./tests/reporter.js",
-    "version": "npm dist"
+    "version": "npm run dist"
   },
   "dependencies": {
     "@types/node": "^10.3.2",
