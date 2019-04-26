@@ -27,6 +27,7 @@ utils.defineProperty(Web3Signer, 'onchange', {
 });
 
 */
+var msgId = 0;
 var Web3Provider = /** @class */ (function (_super) {
     __extends(Web3Provider, _super);
     function Web3Provider(web3Provider, network) {
@@ -60,9 +61,10 @@ var Web3Provider = /** @class */ (function (_super) {
             var request = {
                 method: method,
                 params: params,
-                // id: 42,
+                id: msgId,
                 jsonrpc: "2.0"
             };
+            ++msgId;
             _this._sendAsync(request, function (error, result) {
                 if (error) {
                     reject(error);
